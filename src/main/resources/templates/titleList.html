@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>게시글 목록</title>
+</head>
+<body>
+   <div class="box-body">
+       <table class="table table-bordered">
+           <tr>
+               <th style="width: 10px">BNO</th>
+               <th>TITLE</th>
+               <th style="width: 200px">WRITER</th>
+               <th style="width: 200px">REGDATE</th>
+               <th style="width: 40px">VIEWCNT</th>
+           </tr>
+
+           <tr th:each="titleList : ${list}">
+               <td></td>
+               <td th:text="${titleList.subject}">TITLE</td>
+               <td></td>
+               <td></td>
+               <td></td>
+           </tr>
+
+       </table>
+   </div>
+</body>
+</html>
+
